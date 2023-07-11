@@ -9,6 +9,7 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
+    "plugins": ["import"],
     "rules": {
       "no-shadow": "off",
       "no-param-reassign": "off",
