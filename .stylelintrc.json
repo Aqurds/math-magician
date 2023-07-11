@@ -15,7 +15,8 @@
         ]
       }
     ],
-    "length-zero-no-unit": null
+    "length-zero-no-unit": null,
+    "no-eol-whitespace": null
   },
   "csstree/validator": true,
   "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css"]
