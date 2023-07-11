@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  border: 1px solid lightgrey;
+  width: 310px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -26,6 +31,54 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.output-input {
+  background: #e0e0e0;
+  width: 300px;
+  height: 50px;
+  text-align: right;
+  padding: 5px;
+  border: none;
+  line-height: 50px;
+}
+
+.operation-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.operation-button {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background: #F5913E;
+  color: white;
+  cursor: pointer;
+}
+
+.other-button {
+  width: 75%;
+  background: #f1f1f1;
+}
+
+.span-generic {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.span-other {
+  width: 75px;
+  float: left;
+}
+
+.span-zero {
+  width: 152px;
 }
 
 @keyframes App-logo-spin {
