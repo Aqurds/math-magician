@@ -35,7 +35,7 @@ function Calculator() {
         <div className='other-button'>
           <span className='span-generic span-other' onClick={operateClick}>AC</span>
           <span className='span-generic span-other' onClick={operateClick}>+/-</span>
-          <span className='span-generic span-other'>%</span>
+          <span className='span-generic span-other' onClick={operateClick}>%</span>
           <span className='span-generic span-other' onClick={operateClick}>7</span>
           <span className='span-generic span-other' onClick={operateClick}>8</span>
           <span className='span-generic span-other' onClick={operateClick}>9</span>
