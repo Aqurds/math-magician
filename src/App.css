@@ -52,14 +52,12 @@
   display: flex;
   flex-direction: column;
   width: 25%;
-  background: #f5913e;
   color: white;
   cursor: pointer;
 }
 
 .other-button {
   width: 75%;
-  background: #f1f1f1;
 }
 
 .span-generic {
@@ -70,11 +68,26 @@
   align-items: center;
   border: 1px solid lightgray;
   cursor: pointer;
+  background: #f1f1f1;
+  transition: all 0.3s;
+}
+
+.span-generic:hover {
+  background: #b5b5b5;
 }
 
 .span-other {
   width: 75px;
   float: left;
+}
+
+.orange-color {
+  background: #f5913e;
+  transition: all 0.3s;
+}
+
+.orange-color:hover {
+  background: #c35e0a;
 }
 
 .span-zero {

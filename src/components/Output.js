@@ -1,14 +1,8 @@
 import '../App.css';
 
-function Output() {
+function Output(props) {
   return (
-    <div className='operation-button'>
-      <span className='span-generic'>+</span>
-      <span className='span-generic'>x</span>
-      <span className='span-generic'>-</span>
-      <span className='span-generic'>+</span>
-      <span className='span-generic'>=</span>
-    </div>
+    <span className='output-input'>{props.result}</span>
   );
 }
 
