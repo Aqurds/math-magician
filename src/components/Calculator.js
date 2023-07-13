@@ -1,8 +1,10 @@
 import '../App.css';
 import Output from './Output';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 import { useState } from 'react';
+import Block from './SingleBlock';
+import OtherSign from './OtherSign';
+import OperationSign from './OperationSign';
 
 function Calculator() {
   const [result, setResult] = useState('0')
@@ -14,7 +16,6 @@ function Calculator() {
 
   const operateClick = (e) => {
     const calculatedData = calculate(operationData, e.target.textContent);
-    // console.log(calculatedData)
 
     if (calculatedData.next !== null) {
       setOperationData(calculatedData);
@@ -33,27 +34,20 @@ function Calculator() {
       <Output result={result} />
       <div className='operation-wrapper'>
         <div className='other-button'>
-          <span className='span-generic span-other' onClick={operateClick}>AC</span>
-          <span className='span-generic span-other' onClick={operateClick}>+/-</span>
-          <span className='span-generic span-other' onClick={operateClick}>%</span>
-          <span className='span-generic span-other' onClick={operateClick}>7</span>
-          <span className='span-generic span-other' onClick={operateClick}>8</span>
-          <span className='span-generic span-other' onClick={operateClick}>9</span>
-          <span className='span-generic span-other' onClick={operateClick}>4</span>
-          <span className='span-generic span-other' onClick={operateClick}>5</span>
-          <span className='span-generic span-other' onClick={operateClick}>6</span>
-          <span className='span-generic span-other' onClick={operateClick}>1</span>
-          <span className='span-generic span-other' onClick={operateClick}>2</span>
-          <span className='span-generic span-other' onClick={operateClick}>3</span>
-          <span className='span-generic span-other span-zero' onClick={operateClick}>0</span>
-          <span className='span-generic span-other' onClick={operateClick}>.</span>
+          {OtherSign.map((sign) => {
+            if (sign == '0') {
+              return (
+                <Block classList={'span-generic span-other span-zero'} sign={sign} clickEvent={operateClick}/>
+              )
+            } else {
+              return (<Block classList={'span-generic span-other'} sign={sign} clickEvent={operateClick}/>)
+            }
+          })}
         </div>
         <div className='operation-button'>
-          <span className='span-generic orange-color' onClick={operateClick}>&#247;</span>
-          <span className='span-generic orange-color' onClick={operateClick}>x</span>
-          <span className='span-generic orange-color' onClick={operateClick}>-</span>
-          <span className='span-generic orange-color' onClick={operateClick}>+</span>
-          <span className='span-generic orange-color' onClick={operateClick}>=</span>
+          {OperationSign.map((sign) => {    
+            return (<Block classList={'span-generic orange-color'} sign={sign} clickEvent={operateClick}/>)
+          })}
         </div>
       </div>
     </div>
