@@ -37,16 +37,16 @@ function Calculator() {
           {OtherSign.map((sign) => {
             if (sign == '0') {
               return (
-                <Block classList={'span-generic span-other span-zero'} sign={sign} clickEvent={operateClick}/>
+                <Block classList={'span-generic span-other span-zero'} sign={sign} clickEvent={operateClick} key={sign}/>
               )
             } else {
-              return (<Block classList={'span-generic span-other'} sign={sign} clickEvent={operateClick}/>)
+              return (<Block classList={'span-generic span-other'} sign={sign} clickEvent={operateClick} key={sign}/>)
             }
           })}
         </div>
         <div className='operation-button'>
           {OperationSign.map((sign) => {    
-            return (<Block classList={'span-generic orange-color'} sign={sign} clickEvent={operateClick}/>)
+            return (<Block classList={'span-generic orange-color'} sign={sign} clickEvent={operateClick} key={sign}/>)
           })}
         </div>
       </div>
