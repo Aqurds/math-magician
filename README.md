@@ -141,7 +141,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Aqurds/math-magician/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
