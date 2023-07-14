@@ -1,0 +1,42 @@
+.quote-wrapper {
+  background: rgba(0, 100, 0, .05);
+  width: 80%;
+  margin: 100px auto;
+  padding: 30px;
+  color: darkgreen;
+  text-align: left;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#quote-category {
+  color: lightseagreen;
+  text-transform: capitalize;
+  font-size: 52px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#quote-main {
+  font-style: italic;
+}
+
+#quote-author {
+  color: darkorange;
+  font-size: 28px;
+  text-align: right;
+  padding-right: 50px;
+  text-decoration: underline;
+}
+
+#quote-loading {
+  text-align: center;
+}
+
+#quote-error {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: red;
+  margin-top: 100px;
+}

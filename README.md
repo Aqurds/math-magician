@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <!-- <img src="./assets/image/book-icon.png" alt="logo" width="140"  height="auto" /> -->
+  <img src="./src/math-magician-logo.png" alt="logo" width="240"  height="auto" />
   <br/>
 
   <h3><b>Math Magician</b></h3>
@@ -141,7 +141,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Aqurds/math-magician/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
