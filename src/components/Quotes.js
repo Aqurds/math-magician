@@ -11,9 +11,6 @@ function Quotes() {
   const [category, setCategory] = useState('');
   const apiFetched = useRef(false);
 
-  // the .env will be used in production
-  // const api_url = process.env.REACT_APP_API_URL;
-
   useEffect(() => {
     if (apiFetched.current) return;
     apiFetched.current = true;
@@ -25,7 +22,6 @@ function Quotes() {
           }
         })
         const quoteResponse = await response.json()
-        // console.log(quoteResponse)
         setQuote(quoteResponse[0].quote);
         setCategory(quoteResponse[0].category);
         setAuthor(quoteResponse[0].author);
