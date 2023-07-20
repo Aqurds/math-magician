@@ -1,0 +1,23 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-wrapper ul li {
+  display: inline-block;
+}
+
+.nav-wrapper ul li a {
+  color: #040548;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+}

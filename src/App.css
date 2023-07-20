@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid lightgray;
+  border: 1px solid lightsteelblue;
   cursor: pointer;
   background: #f1f1f1;
   transition: all 0.3s;
@@ -84,8 +84,9 @@
 }
 
 .orange-color {
-  background: #f5913e;
+  background: #040548;
   transition: all 0.3s;
+  font-weight: 900;
 }
 
 .orange-color:hover {

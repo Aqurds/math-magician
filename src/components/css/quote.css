@@ -1,16 +1,17 @@
 .quote-wrapper {
-  background: rgba(0, 100, 0, .05);
-  width: 80%;
+  background: rgba(0, 100, 0, .02);
   margin: 100px auto;
   padding: 30px;
-  color: darkgreen;
+  color: #040548;
   text-align: left;
   font-size: 32px;
   font-weight: bold;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 #quote-category {
-  color: lightseagreen;
+  color: #ee2d56;
   text-transform: capitalize;
   font-size: 52px;
   text-align: left;
@@ -22,7 +23,7 @@
 }
 
 #quote-author {
-  color: darkorange;
+  color: #fdb128;
   font-size: 28px;
   text-align: right;
   padding-right: 50px;
