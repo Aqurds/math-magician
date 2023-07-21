@@ -1,0 +1,11 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.header-wrapper img {
+  width: 150px;
+}

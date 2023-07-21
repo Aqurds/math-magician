@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../App.css';
-import '../quote.css';
+import './/css/quote.css';
 import ApiCredentials from './ApiCredentials';
 
 function Quotes() {
